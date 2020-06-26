@@ -3,3 +3,14 @@ server:
 spring:
   application:
     name: test-server
+person:
+  name: 张三
+  age: 23
+  birth: 2020/01/31 23:59:59
+  map: {k1: v1, k2: haha}
+  list:
+    - aa
+    - bb
+  dog:
+    dogName: 旺财
+    dogAge: 3
