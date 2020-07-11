@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: test-server
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+
 person:
   name: 张三
   age: 23

@@ -1,5 +1,6 @@
 package com.anxiuze.controller;
 
+import com.anxiuze.po.user.TUser;
 import com.anxiuze.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,4 +24,8 @@ public class HelloController {
         return helloService.sayHello();
     }
 
+    @RequestMapping(value = "/queryAll", method = RequestMethod.GET)
+    public TUser queryAll(){
+        return helloService.queryAll();
+    }
 }
