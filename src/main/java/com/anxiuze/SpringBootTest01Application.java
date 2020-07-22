@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 
 //@ImportResource(locations = {"classpath:bean.xml"})
 @SpringBootApplication
-@MapperScan("com.anxiuze.dao.*")
+@MapperScan("com.anxiuze.dao")
 public class SpringBootTest01Application {
 
     public static void main(String[] args) {

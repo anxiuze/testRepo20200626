@@ -5,6 +5,8 @@ import com.anxiuze.po.user.TUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 /**
  * @author anxiuze
  * @date 2020/6/27 18:19
@@ -21,8 +23,8 @@ public class HelloService {
         return "hello World!";
     }
 
-    public TUser queryAll(){
-        return (TUser) userMapper.selectByExample(null);
+    public List<TUser> queryAll(){
+        return userMapper.selectByExample(null);
     }
 
 
